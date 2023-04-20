@@ -1,5 +1,5 @@
 import React from 'react';
-import  './css/Breacfast.css';
+import  './css/list.css';
 import MEALS from './Data';
 
 const breacfastMeals = MEALS.filter(IFood => IFood.category === 'завтрак');
@@ -7,9 +7,9 @@ const breacfastMeals = MEALS.filter(IFood => IFood.category === 'завтрак'
 function Breacfast() {
   return (
     <body>
-        <div className='breacfast'>
-            <header className='br-header'></header>
-            <h1 className='br-title'>Завтрак</h1>
+        <div className='cover'>
+            <header className='co-header'></header>
+            <h1 className='co-title'>Завтрак</h1>
         </div>
     </body>
   );
