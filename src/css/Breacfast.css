@@ -1,0 +1,12 @@
+body {
+  background: rgb(245, 221, 241);
+}
+
+.breacfast .br-header {
+  width: auto;
+  height: 5ch;
+  background: rgb(151, 98, 142);
+}
+.breacfast .br-title {
+  text-align: center;
+}

@@ -1,14 +1,10 @@
 import React from 'react';
+import Home from './Home';
+import Breacfast from './breakfast';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <Breacfast/>
   );
 }
 

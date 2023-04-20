@@ -1,0 +1,37 @@
+.home{
+    display: flex;
+    flex-direction: column;
+
+    .home-header {
+        width: auto;
+        height: 5ch;
+        background: rgb(151, 98, 142);
+    }
+
+    .home-title {
+        text-align: center;
+    }
+
+    .home-category{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
+        .category{
+
+            .category-title{
+                text-align: center;
+            }
+
+            .category-picture {
+                width: 40ch;
+                height: 40ch;
+            }
+        }
+    
+    }
+}
+
+body{
+    background: rgb(245, 221, 241);
+}
