@@ -1,11 +1,7 @@
 import React from 'react';
 import Home from './Home';
-import Breakfast from './breakfast';
-import Dinner from './dinner';
-import Lunch from "./lunch";
-import Drink from "./drink";
-import Bakery from "./bakery";
-import Snacks from "./snacks";
+import CategoryMeal from './categoryMeal';
+import Meal from "./meal";
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,22 +14,25 @@ function App() {
       <main>
         <Switch>
           <Route path='/breacfast'>
-            <Breakfast/>
+            <CategoryMeal/>
           </Route>
           <Route path='/dinner'>
-            <Dinner/>
+            <CategoryMeal/>
           </Route>
           <Route path='/lunch'>
-            <Lunch/>
+            <CategoryMeal/>
           </Route>
           <Route path='/drink'>
-            <Drink/>
+            <CategoryMeal/>
           </Route>
           <Route path='/bakery'>
-            <Bakery/>
+            <CategoryMeal/>
           </Route>
           <Route path='/snacks'>
-            <Snacks/>
+            <CategoryMeal/>
+          </Route>
+          <Route path='/meal'>
+            <Meal/>
           </Route>
           <Route path='/'>
             <Home/>
