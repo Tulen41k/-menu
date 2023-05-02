@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import  './css/Home.css';
 import {Link} from "react-router-dom";
+import Header from "./header";
 
 const categoryTipes = {
   Breakfast: 'breakfast',
@@ -51,9 +52,8 @@ const [category, setCategory] = useState('');
 function Home() {
   return (
     <body className='home-body'>
+    <Header/>
     <div className="home">
-      <header className="home-header">
-      </header>
       <h1 className='home-title'>Наше меню</h1>
       <span className='home-category'>
         <Link to="/breakfast" className='category'

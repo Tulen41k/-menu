@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './Home';
 import CategoryMeal from './categoryMeal';
 import Meal from "./meal";
+import Information from "./information"
 import {
   BrowserRouter as Router,
   Switch,
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route path='/meal'>
             <Meal/>
+          </Route>
+          <Route path='/info'>
+            <Information/>
           </Route>
           <Route path='/'>
             <Home/>

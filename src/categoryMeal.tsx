@@ -3,6 +3,7 @@ import  './css/list.css';
 import MEALS from './Data';
 import {selectedCategory} from "./Home";
 import {Link} from "react-router-dom";
+import Header from "./header";
 
 const selectMeals = MEALS.filter(IFood => IFood.category === selectedCategory);
 export let selectedMeal = '';
@@ -15,6 +16,7 @@ useEffect(() => {
 export default function CategoryMeal() {
     return (
         <body>
+        <Header/>
         <div className='cover'>
             <header className='co-header'></header>
             <h1 className='co-title'>{selectedCategory}</h1>
